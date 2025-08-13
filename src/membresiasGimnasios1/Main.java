@@ -10,10 +10,10 @@ public class Main {
 
 
         Actividad natacion = new Actividad("Natacion", "Natacion", pileta);
-        Actividad crossfit = new Actividad();
-        Actividad basquet = new Actividad();
+        Actividad crossfit = new Actividad("Crossfit", "Crossfit", cardio);
+        Actividad basquet = new Actividad("basquet", "basquet", deportes);
 
-        Membresia unaMembresia = new Membresia();
+//        Membresia unaMembresia = new Membresia();
 
 
         MembresiaFull full1 = new MembresiaFull();
