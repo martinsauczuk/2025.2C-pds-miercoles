@@ -20,7 +20,7 @@ public abstract class Cafe {
     }
 
     // paso 1 no se negocia
-    protected void llenarCafe(int unaCantidad) {
+    private void llenarCafe(int unaCantidad) {
         System.out.printf(">Agregando %d ml de cafe... \n", unaCantidad);
         this.cantidadCafe = unaCantidad;
     }
@@ -29,13 +29,13 @@ public abstract class Cafe {
     protected abstract void presentar();
 
     // Paso 4 no se negocia
-    protected void entregarAlCliente() {
+    private void entregarAlCliente() {
         System.out.println(">Entregando al cliente...");
         this.estaEntregado = true;
     }
 
     // paso 3 no se negocia
-    protected void agregarSobresEndulzante() {
+    private void agregarSobresEndulzante() {
         System.out.println(">Agregando sobre de enduzante...");
         this.tieneSobreEndulzante = true;
     }
