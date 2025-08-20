@@ -1,4 +1,4 @@
-package p02_strategy.ejemploPPTsuscripciones;
+package p02_strategy.ejemploPPTsuscripciones.refactor.producto;
 
 public class Producto {
 

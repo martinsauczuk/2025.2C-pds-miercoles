@@ -1,5 +1,7 @@
 package p02_strategy.ejemploPPTsuscripciones;
 
+import p02_strategy.ejemploPPTsuscripciones.refactor.producto.Producto;
+
 /*
     La suscripción premium tiene envíos ilimitados en
     todos los productos

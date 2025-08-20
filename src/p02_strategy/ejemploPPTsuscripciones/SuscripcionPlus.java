@@ -1,5 +1,7 @@
 package p02_strategy.ejemploPPTsuscripciones;
 
+import p02_strategy.ejemploPPTsuscripciones.refactor.producto.Producto;
+
 /*
     La suscripción Plus tiene envío gratis solo para productos con
     precio mayor o igual a $50.000. Para los demás productos tiene

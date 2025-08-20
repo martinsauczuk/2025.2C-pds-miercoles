@@ -1,5 +1,7 @@
 package p02_strategy.ejemploPPTsuscripciones;
 
+import p02_strategy.ejemploPPTsuscripciones.refactor.producto.Producto;
+
 public class Main {
 
     public static void main(String[] args) {
