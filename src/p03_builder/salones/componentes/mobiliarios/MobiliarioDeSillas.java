@@ -11,6 +11,6 @@ public class MobiliarioDeSillas implements Mobiliario{
 
     @Override
     public int cantPersonasSentadas() {
-        return 0;
+        return cantSillas;
     }
 }

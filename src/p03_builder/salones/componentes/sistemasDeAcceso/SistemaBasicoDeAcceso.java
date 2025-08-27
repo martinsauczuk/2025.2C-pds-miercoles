@@ -1,7 +1,6 @@
 package p03_builder.salones.componentes.sistemasDeAcceso;
 
-public class SistemaDeIngresoPulseras implements SistemaDeAcceso{
-
+public class SistemaBasicoDeAcceso implements SistemaDeAcceso{
     @Override
     public void agregarAsistente(Asistente unAsistente) {
 

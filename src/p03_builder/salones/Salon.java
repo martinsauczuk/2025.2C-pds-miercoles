@@ -5,6 +5,7 @@ import p03_builder.salones.componentes.catering.Catering;
 import p03_builder.salones.componentes.escenario.Escenario;
 import p03_builder.salones.componentes.mobiliarios.Mobiliario;
 import p03_builder.salones.componentes.musicalizacion.Musicalizacion;
+import p03_builder.salones.componentes.shows.Show;
 import p03_builder.salones.componentes.sistemasDeAcceso.SistemaDeAcceso;
 
 public class Salon {
@@ -15,6 +16,7 @@ public class Salon {
     private final Mobiliario mobiliario;
     private final Escenario escenario;
     private final SistemaDeAcceso sistemaDeAcceso;
+    private final Show show;
 
 
     /*
@@ -25,7 +27,8 @@ public class Salon {
                  Catering catering,
                  Mobiliario mobiliario,
                  Escenario escenario,
-                 SistemaDeAcceso sistemaDeAcceso
+                 SistemaDeAcceso sistemaDeAcceso,
+                 Show show
     ) {
         this.id = id;
         this.musicalizacion = musicalizacion;
@@ -33,6 +36,7 @@ public class Salon {
         this.mobiliario = mobiliario;
         this.escenario = escenario;
         this.sistemaDeAcceso = sistemaDeAcceso;
+        this.show = show;
     }
 
 }

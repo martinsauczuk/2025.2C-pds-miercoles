@@ -7,6 +7,6 @@ public interface SistemaDeAcceso {
     void registrarIngreso(Asistente unAsistente);
     void registrarEgreso(Asistente unAsistente);
     int cantidadAsistenesDentro();
-    int cantidadAsistentesFalantes(Asistente unAsistente);
+    int cantidadAsistentesFaltantes(Asistente unAsistente);
 
 }

@@ -30,41 +30,41 @@ public class Main {
          */
 
         // Configurar salon para casamiento de Seba y Mery para 80 personas
-        Salon salonCasamientoSebaYMery = new Salon(
-                "S4324",
-                new Musicalizacion(),
-                new Catering(80),
-                new MobiliarioMesas(10,8),
-                null,
-                new SistemaDeAccesoPlanilla()
-        );
+//        Salon salonCasamientoSebaYMery = new Salon(
+//                "S4324",
+//                new Musicalizacion(),
+//                new Catering(80),
+//                new MobiliarioMesas(10,8),
+//                null,
+//                new SistemaDeAccesoPlanilla()
+//        );
+
+        Salon salonCasamientoSebaYMeryConBuilder = new SalonBuilder()
+                .id("S4324")
+                .mobiliario(new MobiliarioMesas(10,8))
+                .musicalizacion(new Musicalizacion())
+                .acceso(new SistemaDeAccesoPlanilla())
+                .build();
 
         // Configurar salon para una conferencia de Alan Kay para 200 personas
-        Salon conferenciaAlanKay200p = new Salon(
-                "S4464",
-                null,
-                null,
-                new MobiliarioDeSillas(200),
-                new Escenario(),
-                new SistemaDeIngresoPulseras()
-        );
+//        Salon conferenciaAlanKay200p = new Salon(
+//                "S4464",
+//                null,
+//                null,
+//                new MobiliarioDeSillas(200),
+//                new Escenario(),
+//                new SistemaDeIngresoPulseras()
+//        );
 
         // Configurar salon para una conferencia de Alan Kay para 200 personas
-        Salon acreditacionMaratonBA = new Salon(
-                "S356",
-                null,
-                null,
-                new MobiliarioDeVallas(),
-                null,
-                new SistemaDeAccesoQr()
-        );
-
-        System.out.println(salonCasamientoSebaYMery);
-        System.out.println(conferenciaAlanKay200p);
-        System.out.println(acreditacionMaratonBA);
-
-
-
+//        Salon acreditacionMaratonBA = new Salon(
+//                "S356",
+//                null,
+//                null,
+//                new MobiliarioDeVallas(),
+//                null,
+//                new SistemaDeAccesoQr()
+//        );
 
 
 

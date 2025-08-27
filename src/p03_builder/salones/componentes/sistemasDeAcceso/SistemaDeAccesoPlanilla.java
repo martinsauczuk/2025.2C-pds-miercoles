@@ -28,7 +28,7 @@ public class SistemaDeAccesoPlanilla implements SistemaDeAcceso {
     }
 
     @Override
-    public int cantidadAsistentesFalantes(Asistente unAsistente) {
+    public int cantidadAsistentesFaltantes(Asistente unAsistente) {
         return 0;
     }
 }
