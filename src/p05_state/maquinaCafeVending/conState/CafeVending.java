@@ -1,17 +1,23 @@
-package p05_state.maquinaCafeVending.sinState;
+package p05_state.maquinaCafeVending.conState;
 
-public class MaquinaCafe {
+import p05_state.maquinaCafeVending.conState.estados.CafeVendingState;
+import p05_state.maquinaCafeVending.conState.estados.Inactivo;
+
+public class CafeVending {
 
     private int cantidadAzucarSeleccionada = 3;
     private int contadorCafes = 0;
     private int contadorCortados = 0;
 
-    private boolean estaPago = false;
+    private CafeVendingState estadoActual = new Inactivo(this);
 
-    private String mensaje = "Acerque su tarjeta";
+
+    public void setEstadoActual(CafeVendingState estadoActual) {
+        this.estadoActual = estadoActual;
+    }
 
     public String indicacionDisplay() {
-        return mensaje;
+        return this.estadoActual.indicacionDisplay();
     }
 
     public void btnMasAzucar() {
@@ -32,28 +38,14 @@ public class MaquinaCafe {
     }
 
     public void acercarTarjetaCredito() {
-        estaPago = true;
-        mensaje = "Seleccione su cafe";
+        this.estadoActual.confirmarPago();
     }
 
     public void btnCafeSolo() {
-        if (estaPago) {
-            // preparar cafe solo
-            contadorCafes = contadorCafes + 1;
-            estaPago = false;
-            mensaje = "Acerque su tarjeta";
-        }
+        this.estadoActual.seleccionCafeSolo();
     }
 
     public void btnCafeCortado() {
-
-        if (estaPago) {
-            // preparar cafe cortado
-            contadorCortados = contadorCortados + 1;
-            estaPago = false;
-            mensaje = "Acerque su tarjeta";
-        }
+        this.estadoActual.seleccionCafeCortado();
     }
-
-
 }
