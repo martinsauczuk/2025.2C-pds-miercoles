@@ -1,4 +1,4 @@
-package p07_observer.ejemploPresentacion;
+package p07_observer.ejemploPresentacion.observadores;
 
 public interface Observador {
 
