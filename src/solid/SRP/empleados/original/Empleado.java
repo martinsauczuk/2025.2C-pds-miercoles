@@ -1,5 +1,7 @@
 package solid.SRP.empleados.original;
 
+import java.util.HashSet;
+
 public class Empleado {
 
     private int salarioBasico;
@@ -9,6 +11,8 @@ public class Empleado {
     private String nombre;
     private String apellido;
 
+    private HashSet<Proyecto> proyectosAsignados;
+
 
     public float calcularSueldoTotal() {
         return salarioBasico - this.descuentos();
@@ -16,6 +20,10 @@ public class Empleado {
 
     private float descuentos() {
         return salarioBasico * 0.17f;
+    }
+
+    private void asignarProyecto(Proyecto unProyecto) {
+        this.proyectosAsignados.add(unProyecto);
     }
 
 }

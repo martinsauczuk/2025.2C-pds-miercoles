@@ -10,11 +10,11 @@ public class Main {
         unRectangulo.setLargo(5);
         System.out.printf("El area del rectangulo es %d %n", unRectangulo.calcularArea());
 
-
+        // Mi cuadrado
         Cuadrado unCuadrado = new Cuadrado();
         unCuadrado.setAncho(10);
         System.out.printf("El area del cuadrado es %d %n", unCuadrado.calcularArea());
-        unCuadrado.setAncho(9);
+        unCuadrado.setLargo(9);
         System.out.printf("El area del cuadrado es %d %n", unCuadrado.calcularArea());
 
 

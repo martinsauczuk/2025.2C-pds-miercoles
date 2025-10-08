@@ -4,14 +4,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Perro apolo = new Perro(7, "Apolo");
-        CorredorConPerro bautista = new CorredorConPerro("Bautista", apolo);
+        Perro lola = new Perro(12, "Lola");
+        CorredorConPerro megan = new CorredorConPerro("Megan", lola);
+
+        Perro milanga = new Perro(2,"Milanga");
+        CorredorConPerro lucas = new CorredorConPerro("Lucas", milanga);
 
 
-        DogRun laCarrera = new DogRun();
-        laCarrera.incribir(bautista);
+        DogRun carrera = new DogRun();
+        carrera.incribir(megan);
+        carrera.incribir(lucas);
 
-        System.out.println(laCarrera.nombresDeTodosLosPerros());
+        System.out.println( carrera.nombresDeTodosLosPerros());
+
+
 
 
     }

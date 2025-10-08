@@ -1,9 +1,10 @@
-package solid.productos.original;
+package solid.OCP.productos.original;
 
 public class Producto {
 
     private final float precioDeLista;
     private final String nombre;
+    private float descuento;
 
     public Producto(float precioDeLista, String nombre) {
         this.precioDeLista = precioDeLista;

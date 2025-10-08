@@ -1,4 +1,4 @@
-package solid.productos.original;
+package solid.OCP.productos.original;
 
 public class Main {
 
