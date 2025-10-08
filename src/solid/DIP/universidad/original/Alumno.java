@@ -1,4 +1,6 @@
-package p03_builder.universidad;
+package solid.DIP.universidad.original;
+
+
 
 public class Alumno {
 
@@ -23,5 +25,21 @@ public class Alumno {
 
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
+    }
+
+    public String nombre() {
+        return nombre;
+    }
+
+    public String apellido() {
+        return apellido;
+    }
+
+    public String legajo() {
+        return legajo;
+    }
+
+    public void actualizar(String mensaje) {
+        System.out.println("Hacer algo con el mensaje");
     }
 }
