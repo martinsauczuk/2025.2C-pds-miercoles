@@ -1,4 +1,4 @@
-package integradorUbert;
+package integradorUbert.pasajeros;
 
 
 public interface Pasajero {

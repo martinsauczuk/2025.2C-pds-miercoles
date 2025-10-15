@@ -1,5 +1,7 @@
-package integradorUbert;
+package integradorUbert.viaje;
 
+
+import integradorUbert.conductores.Conductor;
 
 public interface Viaje {
 

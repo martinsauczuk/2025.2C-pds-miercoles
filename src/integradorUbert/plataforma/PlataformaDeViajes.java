@@ -1,6 +1,8 @@
-package integradorUbert;
+package integradorUbert.plataforma;
 
 
+import integradorUbert.pasajeros.Pasajero;
+import integradorUbert.conductores.Conductor;
 
 public interface PlataformaDeViajes {
 

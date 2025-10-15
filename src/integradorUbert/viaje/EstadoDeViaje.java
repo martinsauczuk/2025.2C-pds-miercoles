@@ -1,4 +1,4 @@
-package integradorUbert;
+package integradorUbert.viaje;
 
 public enum EstadoDeViaje {
 

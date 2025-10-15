@@ -1,4 +1,4 @@
-package integradorUbert;
+package integradorUbert.observer;
 
 public interface Observable {
 
