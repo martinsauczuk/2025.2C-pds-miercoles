@@ -1,4 +1,4 @@
-package p08_factoryMethod;
+package p08_factoryMethod.productos;
 
 public class CafeDeCapsula implements Cafe{
 
@@ -9,11 +9,11 @@ public class CafeDeCapsula implements Cafe{
 
     @Override
     public boolean contieneCafeina() {
-        return false;
+        return true;
     }
 
     @Override
     public int intensidad() {
-        return 0;
+        return 12;
     }
 }

@@ -1,6 +1,6 @@
-package p08_factoryMethod;
+package p08_factoryMethod.productos;
 
-public class CafeDeFiltro implements Cafe{
+public class CafeViajero implements Cafe{
 
     @Override
     public int medida() {

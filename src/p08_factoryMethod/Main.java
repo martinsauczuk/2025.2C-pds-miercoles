@@ -1,15 +1,25 @@
 package p08_factoryMethod;
 
 
+import p08_factoryMethod.creators.CafeCreator;
+import p08_factoryMethod.creators.CafeteraNespresso;
+import p08_factoryMethod.creators.CafeteraVending;
+import p08_factoryMethod.productos.Cafe;
+
 import java.util.HashSet;
 import java.util.LinkedHashSet;
-import java.util.SortedSet;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        CafeCreator nespresso = new CafeteraNespresso();
+        CafeCreator vending = new CafeteraVending();
+
+        // "Productos"
         HashSet<Cafe> cafesConsumidos = new HashSet<>();
+        cafesConsumidos.add( nespresso.preparar() );
+        cafesConsumidos.add( vending.preparar() );
 
 
         // Calcular cafe consumido en cm3
@@ -20,8 +30,9 @@ public class Main {
         System.out.printf("Consumi %d ml de cafe %n", cafeConsumidoTotal );
 
         // Cafeterias visitadas
-        LinkedHashSet<Cafe> cafetereriasVisitadas = new LinkedHashSet<Cafe>();
-
+        LinkedHashSet<CafeCreator> cafetereriasVisitadas = new LinkedHashSet<CafeCreator>();
+        cafetereriasVisitadas.add(nespresso);
+        cafetereriasVisitadas.add(vending);
 
         // Tomar un cafe
 

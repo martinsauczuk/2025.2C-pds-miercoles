@@ -1,4 +1,4 @@
-package p08_factoryMethod;
+package p08_factoryMethod.productos;
 
 public interface Cafe {
 
