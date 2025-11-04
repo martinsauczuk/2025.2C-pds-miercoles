@@ -13,11 +13,11 @@ public class Main {
 
 
         Menu menuEjecutivoParrilla = new MenuEjecutivo(30000);
-        menuEjecutivoParrilla.agregarPlato( asadoCreator.cocinar() );
+//        menuEjecutivoParrilla.agregarPlato( asadoCreator.cocinar() );
         menuEjecutivoParrilla.agregarBebida( new CopaDeVino() );
 
         Menu menuEjecutivoSaludable = new MenuEjecutivo(234);
-        menuEjecutivoSaludable.agregarPlato( ensaladaCreator.cocinar() );
+//        menuEjecutivoSaludable.agregarPlato( ensaladaCreator.cocinar() );
         menuEjecutivoSaludable.agregarBebida( new PintaDeCerveza() );
 
         MenuFactory mh = new MenuHamburgueseriaFactory();
